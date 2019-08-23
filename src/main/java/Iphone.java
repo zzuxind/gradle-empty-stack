@@ -1,10 +1,17 @@
 import java.util.Scanner;
 
 public class Iphone extends Mobile {
-	private String hintmessageString="<iphone> message:";
 	@Override
-	public void message(String message) {
-		System.out.println("iphone message:");
-		super.message(message);
+	public void call(String message) {
+		if(message.length()<10) {
+			System.out.println("<Iphone>");
+			super.call(message);
+		}else {
+			System.out.println("<iPhone>消息无法发送");
+		}
+		
 	}
+	
+	
+	
 }

@@ -1,10 +1,11 @@
-import java.util.Scanner;
+
 
 public class Mobile {
 	private String nameString;
 	private String colorString;
 	private String branString;
 	
+
 	public Mobile(String nameString, String colorString, String branString) {
 		this.nameString = nameString;
 		this.colorString = colorString;
@@ -15,10 +16,12 @@ public class Mobile {
 		
 	}
 	
-	public void message(String message) {
+	public void call(String message) {
 		System.out.println("message:"+message);
-//		Scanner scanner=new Scanner(System.in);
-//		System.out.println(scanner.nextLine());
+	}
+	
+	public void info() {
+		System.out.println("名称:"+nameString+",颜色:"+colorString+",品牌:"+branString);
 	}
 	
 }

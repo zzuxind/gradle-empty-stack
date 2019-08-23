@@ -1,10 +1,13 @@
 
 public class Andriod extends Mobile{
-	private String hintmessageString="<android> message:";
-	
 	@Override
-	public void message(String message) {
-		System.out.println("android message:");
-		super.message(message);
+	public void call(String message) {
+		if (message.length()<15) {
+			System.out.println("<Android>");
+			super.call(message);
+			
+		} else {
+			System.out.println("<Android>消息无法发送");
+		}
 	}
 }

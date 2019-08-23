@@ -8,7 +8,13 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        Mobile mobile=new Mobile();
+        mobile.call("message");
         
-       
+        Iphone iphone=new Iphone();
+        iphone.call("message");
+        
+        Andriod andriod=new Andriod();
+        andriod.call("message");
     }
 }
